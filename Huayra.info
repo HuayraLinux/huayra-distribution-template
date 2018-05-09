@@ -1,3 +1,7 @@
+############
+# Huayra 4 #
+############
+
 Suite: zonda
 RepositoryType: deb
 BaseURI: http://repo-huayra.conectarigualdad.gob.ar/huayra/
@@ -5,23 +9,49 @@ MatchURI: huayra
 MirrorsFile: Huayra.mirrors
 Description: Huayra 4 'zonda'
 Component: main
-CompDescription: Soportado oficialmente.
+CompDescription: Soportado oficialmente
 Component: contrib
-CompDescription: Paquetes compatibles con las DFSG con dependencias No Libres.
+CompDescription: Paquetes compatibles con la DFSG con dependencias no-libres
 Component: non-free
-CompDescription: Paquetes No compatibles con DFSG.
+CompDescription: Paquetes incompatibles con DFSG
 
 Suite: zonda-updates
 RepositoryType: deb
-BaseURI: http://repo-huayra.conectarigualdad.gob.ar/huayra/
-Description: Huayra 3 'zonda' Actualizaciones 
+Description: Actualizaciones de Huayra
 ParentSuite: zonda
 
 Suite: zonda-proposed
 RepositoryType: deb
-BaseURI: http://repo-huayra.conectarigualdad.gob.ar/huayra/
-Description: Huayra 3 'zonda' prueba de actualizaciones 
+Description: Actualizaciones en pruebas de Huayra
 ParentSuite: zonda
+
+############
+# Debian 9 #
+############
+
+Suite: stretch/updates
+RepositoryType: deb
+BaseURI: http://security.debian.org/
+MatchURI: security\.debian\.org
+MirrorsFile: Debian.mirrors
+ParentSuite: zonda
+Description: Actualizaciones de seguridad de Debian
+
+Suite: stretch-updates
+RepositoryType: deb
+MirrorsFile: Debian.mirrors
+ParentSuite: zonda
+Description: Actualizaciones recomendadas de Debian
+
+Suite: stretch-proposed-updates
+RepositoryType: deb
+MirrorsFile: Debian.mirrors
+ParentSuite: zonda
+Description: Actualizaciones en pruebas de Debian
+
+############
+# Huayra 3 #
+############
 
 Suite: sud
 RepositoryType: deb
@@ -48,6 +78,10 @@ BaseURI: http://repo-huayra.conectarigualdad.gob.ar/huayra/
 Description: Huayra 3 'sud' prueba de actualizaciones 
 ParentSuite: sud
 
+############
+# Huayra 2 #
+############
+
 Suite: pampero
 RepositoryType: deb
 BaseURI: http://repo-huayra.conectarigualdad.gob.ar/huayra/
@@ -72,6 +106,10 @@ RepositoryType: deb
 BaseURI: http://repo-huayra.conectarigualdad.gob.ar/huayra/
 Description: Huayra 2 'pampero' prueba de actualizaciones 
 ParentSuite: pampero
+
+############
+# Huayra 1 #
+############
 
 Suite: brisa
 RepositoryType: deb

@@ -5,7 +5,5 @@ pueda trabajar cómodamente con Huayra GNU/Linux.
 
 ###TODO
 
-* Armar paquete (recordar que ésto se instala en
-  `/usr/share/python-apt/templates/`).
 * Testear la mayor cantidad de programas que se aprovechen de
   python-apt posibles.
