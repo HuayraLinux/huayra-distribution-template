@@ -1,0 +1,17 @@
+Source: huayra-distribution-template
+Section: python
+Priority: optional
+Maintainer: Ignacio Losiggio <iglosiggio@dc.uba.ar>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 3.9.8
+Homepage: https://github.com/HuayraLinux/huayra-distribution-template
+Vcs-Git: https://github.com/HuayraLinux/huayra-distribution-template.git
+Vcs-Browser: https://github.com/HuayraLinux/huayra-distribution-template
+
+Package: huayra-distribution-template
+Architecture: all
+Depends: ${misc:Depends}, python-apt-common
+Description: Template de Huayra GNU/Linux para python-apt
+ Éste template es utilizado por los programas que utilizan python-apt
+ ó python3-apt para proveer información sobre los repositorios de
+ software de Huayra GNU/Linux.
